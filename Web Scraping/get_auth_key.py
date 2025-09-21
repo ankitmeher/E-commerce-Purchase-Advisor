@@ -11,7 +11,7 @@ def run():
                 print("=== updateFromSlug request detected ===")
                 print("Auth Header:", request.headers.get('auth'))
                 print("All Headers:", request.headers)
-                with open("./API_KEY/auth_key.txt", "w") as f:
+                with open("./Web Scraping/API_KEY/auth_key.txt", "w") as f:
                     f.write(request.headers.get('auth', 'No auth header found'))
                 
 
